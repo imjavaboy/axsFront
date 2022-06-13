@@ -1,0 +1,38 @@
+ import Network from "./NetWork";
+
+export const login = (data) => Network.postRequest('/account/login',data)
+export const loginByUser = (data) => Network.postRequest('/account/login/userpass',data)
+export const getAccount = (id) => Network.getRequest('/account/getAccount',{id:id})
+export const getDealingList = (currentPage) => Network.getRequest('/dealing/getAllDealing',{currentPage})
+export const getDealingDetail = (id) => Network.getRequest('/dealing/getDealingById',{id:id})
+export const getSearchDetail = (keyword) => Network.getRequest('/dealing/searchDealing',{keyword});
+export const getAllPosting = (currentPage) => Network.getRequest('/posting/getAllPosting',{currentPage:currentPage});
+export const getDetailPostingById = (id) => Network.getRequest('/posting/getPostingById',{id});
+export const doLike = (uid,pid) => Network.putRequest(`/posting/likes/doLike/${uid}/${pid}`);
+export const dontLike = (uid,pid) => Network.putRequest(`/posting/likes/dontLike/${uid}/${pid}`)
+export const remarkPosting = (uid,postingId,context) => Network.putRequest(`/posting/comments/insertComments`,{uid,postingId,context})
+export const getMyLike = (uid) => Network.getRequest('/posting/mylike',{uid})
+export const uploadImge = (fileurl) => Network.uploadImg('/cat/oss/upload',fileurl)
+export const insertPosting = (data) => Network.putRequest('/posting/insertPosting',data)
+export const getMyPosting = (uid,curPage) => Network.getRequest('/posting/getMyPosting',{uid,curPage})
+export const getAllTags = () => Network.getRequest('/posting/getAlltags')
+export const delPosting = (pid) => Network.deleteRequest(`/posting/delPosting/${pid}`)
+export const getMyCommentPosting = (uid) => Network.getRequest(`/posting/mycomPosting/${uid}`)
+export const delComment = (cid,pid) =>Network.deleteRequest(`/posting/delComment/${cid}/${pid}`)
+export const insertDealing = (data) => Network.postRequest('/dealing/insertDealing',data)
+export const insertBuying = (data) => Network.postRequest('/buying/insertBuying',data)
+export const isCollect = (uid,did) => Network.getRequest('/dealing/isCollect',{uid,did})
+export const collectDeal = (data) => Network.putRequest('/dealing/collect',data)
+export const noCollect = (data) => Network.deleteRequest('/dealing/collect',data)
+export const getCollectList = (page,uid) =>Network.getRequest('/dealing/collect',{page:page,uid:uid})
+export const getChatList = (uid) =>Network.getRequest('/chatting/chatList',{uid:uid})
+export const getShopList = (curPage,uid) =>Network.getRequest('/dealing/shopList',{curPage:curPage,uid:uid})
+export const isInCart = (uid,dealingId) => Network.getRequest('/dealing/isInCart',{uid:uid,dealingId:dealingId})
+export const inCart = (data) => Network.postRequest('/dealing/joinCart',data)
+export const outCart = (uid,dealingId) => Network.deleteRequest(`/dealing/outCart/${uid}/${dealingId}`)
+export const myCart = (uid) => Network.getRequest(`/dealing/myCart`,{uid:uid})
+export const getMyPurchase = (uid) => Network.getRequest('/buying/myPurchase',{uid:uid})
+export const getMySell = (uid) => Network.getRequest('/buying/mySell',{uid:uid})
+export const editStatus = (data) => Network.putRequest('/buying/editStatus',data)
+export const getChatListSomeOne = (from,to) => Network.getRequest('/chatting/chat/somebody',{from:from,to:to})
+export const insertMsg = (data) => Network.postRequest('/chatting/insertMsg',data)

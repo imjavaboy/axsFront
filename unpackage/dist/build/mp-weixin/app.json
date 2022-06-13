@@ -1,0 +1,88 @@
+{
+  "pages": [
+    "pages/home/Home",
+    "pages/forum-home/ForumHome",
+    "pages/popup/Popup",
+    "pages/chat-list/List",
+    "pages/user/User",
+    "pages/dealingDtail/DealDtail",
+    "pages/search/Search",
+    "pages/forumDetail/ForumDetail",
+    "pages/postPublish/PublishPost",
+    "pages/secondhand-new/Publish",
+    "pages/mypost/MyLike",
+    "pages/mypost/MyPosting",
+    "pages/mypost/MyComment",
+    "pages/collect/MyCollect",
+    "pages/shop/Shop",
+    "pages/cart/Cart",
+    "pages/order/OrderList",
+    "pages/sell/MySell",
+    "pages/chatDetail/ChatDeatil"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "component": true,
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#E8442E",
+    "list": [
+      {
+        "pagePath": "pages/home/Home",
+        "iconPath": "static/icon/market.png",
+        "selectedIconPath": "static/icon/market_s.png",
+        "text": "社区"
+      },
+      {
+        "pagePath": "pages/forum-home/ForumHome",
+        "iconPath": "static/icon/board.png",
+        "selectedIconPath": "static/icon/board_s.png",
+        "text": "帖吧"
+      },
+      {
+        "pagePath": "pages/popup/Popup",
+        "iconPath": "static/icon/plus.png",
+        "selectedIconPath": "static/icon/plus.png",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/chat-list/List",
+        "iconPath": "static/icon/chat.png",
+        "selectedIconPath": "static/icon/chat_s.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/user/User",
+        "iconPath": "static/icon/user.png",
+        "selectedIconPath": "static/icon/user_s.png",
+        "text": "个人"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-goods-action": "./wxcomponents/vant/goods-action/index",
+    "van-goods-action-icon": "./wxcomponents/vant/goods-action-icon/index",
+    "van-goods-action-button": "/wxcomponents/vant/goods-action-button/index",
+    "van-icon": "./wxcomponents/vant/icon/index",
+    "van-search": "./wxcomponents/vant/search/index",
+    "van-popup": "./wxcomponents/vant/popup/index",
+    "van-tag": "./wxcomponents/vant/tag/index",
+    "van-overlay": "./wxcomponents/vant/overlay/index",
+    "van-uploader": "./wxcomponents/vant/uploader/index",
+    "van-dropdown-menu": "./wxcomponents/vant/dropdown-menu/index",
+    "van-dropdown-item": "./wxcomponents/vant/dropdown-item/index",
+    "van-collapse": "./wxcomponents/vant/collapse/index",
+    "van-collapse-item": "./wxcomponents/vant/collapse-item/index",
+    "van-button": "./wxcomponents/vant/button/index",
+    "van-divider": "./wxcomponents/vant/divider/index",
+    "van-dialog": "./wxcomponents/vant/dialog/index",
+    "van-checkbox": "./wxcomponents/vant/checkbox/index",
+    "van-checkbox-group": "./wxcomponents/vant/checkbox-group/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,201 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/Home",
+			"style": {
+				"navigationBarTitleText": "安小收"
+			}
+		},
+		{
+			"path": "pages/forum-home/ForumHome",
+			"style": {
+				"navigationBarTitleText": "贴吧",
+				"onReachBottomDistance":50
+			}
+		},
+		{
+			"path": "pages/popup/Popup",
+			"style": {
+				"navigationBarTitleText": "发布"
+			}
+		},
+		{
+			"path": "pages/chat-list/List",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/user/User",
+			"style": {
+				"navigationBarTitleText": "个人"
+			}
+		},
+		{
+			"path": "pages/dealingDtail/DealDtail",
+			"style": {
+				"navigationBarTitleText": "商品详情"
+			}
+		},
+		{
+			"path": "pages/search/Search",
+			"style": {
+				"navigationBarTitleText": "搜索结果"
+			}
+		},
+		{
+			"path": "pages/forumDetail/ForumDetail",
+			"style": {
+				"navigationBarTitleText": "帖子详情"
+			}
+		},
+		{
+			"path": "pages/postPublish/PublishPost",
+			"style": {
+				"navigationBarTitleText": "发帖子"
+			}
+		},
+		{
+			"path": "pages/secondhand-new/Publish",
+			"style": {
+				"navigationBarTitleText": "发布二手物品"
+			}
+		},
+		{
+			"path": "pages/mypost/MyLike",
+			"style": {
+				"navigationBarTitleText": "我点赞的帖子"
+			}
+		},
+		{
+			"path": "pages/mypost/MyPosting",
+			"style": {
+				"navigationBarTitleText": "我发布的帖子"
+			}
+		},
+		{
+			"path": "pages/mypost/MyComment",
+			"style": {
+				"navigationBarTitleText": "我评论的帖子"
+			}
+		},
+		{
+			"path": "pages/collect/MyCollect",
+			"style": {
+				"navigationBarTitleText": "我收藏的"
+			}
+		},
+		{
+			"path": "pages/shop/Shop",
+			"style": {
+				"navigationBarTitleText": "店铺"
+			}
+		},
+		{
+			"path": "pages/cart/Cart",
+			"style": {
+				"navigationBarTitleText": "我的购物车"
+			}
+		},
+		{
+			"path": "pages/order/OrderList",
+			"style": {
+				"navigationBarTitleText": "我的购买记录"
+			}
+		},
+		{
+			"path": "pages/sell/MySell",
+			"style": {
+				"navigationBarTitleText": "出售记录"
+			}
+		},
+		{
+			"path": "pages/chatDetail/ChatDeatil",
+			"style": {
+				"navigationBarTitleText": "聊天详情"
+			}
+		},
+		{
+			"path": "pages/login/Login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/register/Register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"component": true,
+		"enablePullDownRefresh": true,
+		"usingComponents": {
+			"van-goods-action": "./wxcomponents/vant/goods-action/index",
+			"van-goods-action-icon": "./wxcomponents/vant/goods-action-icon/index",
+			"van-goods-action-button": "/wxcomponents/vant/goods-action-button/index",
+			"van-icon": "./wxcomponents/vant/icon/index",
+			"van-search": "./wxcomponents/vant/search/index",
+			"van-popup": "./wxcomponents/vant/popup/index",
+			"van-tag": "./wxcomponents/vant/tag/index",
+			"van-overlay": "./wxcomponents/vant/overlay/index",
+			"van-uploader": "./wxcomponents/vant/uploader/index",
+			"van-dropdown-menu": "./wxcomponents/vant/dropdown-menu/index",
+			"van-dropdown-item": "./wxcomponents/vant/dropdown-item/index",
+			"van-collapse": "./wxcomponents/vant/collapse/index",
+			"van-collapse-item": "./wxcomponents/vant/collapse-item/index",
+			"van-button": "./wxcomponents/vant/button/index",
+			"van-divider": "./wxcomponents/vant/divider/index",
+			"van-dialog": "./wxcomponents/vant/dialog/index",
+			"van-checkbox": "./wxcomponents/vant/checkbox/index",
+			"van-checkbox-group": "./wxcomponents/vant/checkbox-group/index"
+		}
+	},
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "安小收",
+		"navigationBarTextStyle": "black"
+	},
+	"sitemapLocation": "sitemap.json",
+	"tabBar": {
+		"selectedColor": "#E8442E",
+		"list": [
+			{
+				"pagePath": "pages/home/Home",
+				"iconPath": "static/icon/market.png",
+				"selectedIconPath": "static/icon/market_s.png",
+				"text": "社区"
+			},
+			{
+				"pagePath": "pages/forum-home/ForumHome",
+				"iconPath": "static/icon/board.png",
+				"selectedIconPath": "static/icon/board_s.png",
+				"text": "帖吧"
+			},
+			{
+				"pagePath": "pages/popup/Popup",
+				"iconPath": "static/icon/plus.png",
+				"selectedIconPath": "static/icon/plus.png",
+				"text": "发布"
+			},
+			{
+				"pagePath": "pages/chat-list/List",
+				"iconPath": "static/icon/chat.png",
+				"selectedIconPath": "static/icon/chat_s.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/user/User",
+				"iconPath": "static/icon/user.png",
+				"selectedIconPath": "static/icon/user_s.png",
+				"text": "个人"
+			}
+		]
+	}
+}
